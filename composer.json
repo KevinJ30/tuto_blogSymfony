@@ -1,4 +1,6 @@
 {
+    "name": "kevinj30/blogtutosymfony",
+    "description": "Tutorial Symfony with code quality",
     "type": "project",
     "license": "proprietary",
     "minimum-stability": "stable",
@@ -7,7 +9,6 @@
         "php": ">=7.2.5",
         "ext-ctype": "*",
         "ext-iconv": "*",
-        "composer/package-versions-deprecated": "1.11.99.4",
         "doctrine/annotations": "^1.0",
         "doctrine/doctrine-bundle": "^2.4",
         "doctrine/doctrine-migrations-bundle": "^3.1",
@@ -39,12 +40,15 @@
         "symfony/twig-bundle": "5.3.*",
         "symfony/validator": "5.3.*",
         "symfony/web-link": "5.3.*",
+        "symfony/webpack-encore-bundle": "^1.12",
         "symfony/yaml": "5.3.*",
         "twig/extra-bundle": "^2.12|^3.0",
         "twig/twig": "^2.12|^3.0"
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.4",
         "phpunit/phpunit": "^9.5",
+        "squizlabs/php_codesniffer": "*",
         "symfony/browser-kit": "5.3.*",
         "symfony/css-selector": "5.3.*",
         "symfony/debug-bundle": "5.3.*",
