@@ -18,8 +18,12 @@ jobs:
           - 3306:3306
 
     steps:
+    - name: Setup PHP, with composer and extensions
+      uses: shivammathur/setup-php@v2
+      with:
+        extensions: mbstring, xml, ctype, iconv, intl
+        coverage: xdebug
     - uses: actions/checkout@v2
-
     - name: Cache Composer packages
       id: composer-cache
       uses: actions/cache@v2
